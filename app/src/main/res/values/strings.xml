@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CYTRACKING</string>
+    <string name="may_i_ask_your_phone_number">May I ask your phone number?</string>
+    <string name="send">Send</string>
+    <string name="wait_for_the_code_i_sent_you">Wait for the code I sent You</string>
+    <string name="enter_verification_code">enter verification code</string>
 </resources>
