@@ -14,15 +14,15 @@
             android:orientation="vertical"
             android:padding="20dp">
 
+
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="100dp"
-                android:text="@string/wait_for_the_code_i_sent_you"
-                />
-
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="120dp"
+                android:text="@string/wait_for_the_OTP"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextCode"
@@ -40,10 +40,12 @@
             <Button
                 android:id="@+id/buttonSignIn"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="59dp"
                 android:layout_below="@+id/editTextCode"
+                android:layout_alignParentBottom="true"
                 android:layout_marginLeft="150dp"
                 android:layout_marginTop="76dp"
+                android:layout_marginBottom="222dp"
                 android:background="@color/colorPrimaryDark"
                 android:text="Sign In"
                 android:textAllCaps="false"
