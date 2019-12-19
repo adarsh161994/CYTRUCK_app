@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E11F1F"
     android:gravity="center"
     tools:context=".ActivityPhoneNumber">
 
@@ -43,12 +42,10 @@
         android:layout_below="@+id/editTextCode"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="150dp"
-        android:layout_marginLeft="150dp"
         android:layout_marginTop="114dp"
         android:layout_marginBottom="184dp"
         android:background="@color/colorPrimaryDark"
         android:text="@string/sign_in"
         android:textAllCaps="false"
-        android:textColor="#cdd8f1"
-        tools:ignore="RtlCompat" />
+        android:textColor="#cdd8f1" />
 </RelativeLayout>
