@@ -7,11 +7,21 @@
     android:gravity="center"
     tools:context=".ProfileActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/text"
-        android:text="Welcome"
-        android:textSize="50dp"/>
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:layout_marginRight="40dp"-->
+<!--        android:id="@+id/eText"-->
+<!--        android:text="ui"/>-->
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/eText"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:id="@+id/btn"-->
+<!--        android:layout_marginLeft="150dp"-->
+<!--        android:text="@string/submit"/>-->
 
 </RelativeLayout>

@@ -5,4 +5,9 @@
     <string name="wait_for_the_OTP">OTP has been sent to your mobile number please enter it below</string>
     <string name="enter_verification_code">enter verification code</string>
     <string name="sign_in">Sign In</string>
+    <string name="cytrucks">CYTRUCKS</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="wait_for_otp">Wait_For_OTP</string>
+    <string name="submit">SUBMIT</string>
+    <string name="id">ID</string>
 </resources>

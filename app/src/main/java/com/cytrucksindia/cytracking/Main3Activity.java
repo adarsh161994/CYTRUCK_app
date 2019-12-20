@@ -1,13 +1,13 @@
 package com.cytrucksindia.cytracking;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -23,9 +23,8 @@ import com.google.firebase.auth.PhoneAuthProvider;
 import java.util.concurrent.TimeUnit;
 
 
-   
 
-public class  ActivityPhoneNumber  extends AppCompatActivity {
+public class Main3Activity  extends AppCompatActivity {
 
     //These are the objects needed
     //It is the verification id that will be sent to the user
@@ -41,7 +40,7 @@ public class  ActivityPhoneNumber  extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_phone_number);
+        setContentView(R.layout.activity_main3);
 
         //initializing objects
         mAuth = FirebaseAuth.getInstance();
@@ -107,7 +106,7 @@ public class  ActivityPhoneNumber  extends AppCompatActivity {
 
         @Override
         public void onVerificationFailed(FirebaseException e) {
-            Toast.makeText( ActivityPhoneNumber .this, e.getMessage(), Toast.LENGTH_LONG).show();
+            Toast.makeText(Main3Activity .this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
 
         @Override
@@ -130,12 +129,12 @@ public class  ActivityPhoneNumber  extends AppCompatActivity {
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
         mAuth.signInWithCredential(credential)
-                .addOnCompleteListener( ActivityPhoneNumber .this, new OnCompleteListener<AuthResult>() {
+                .addOnCompleteListener( Main3Activity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             //verification successful we will start the profile activity
-                            Intent intent = new Intent( ActivityPhoneNumber .this, ProfileActivity.class);
+                            Intent intent = new Intent( Main3Activity .this, Main4Activity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
 
