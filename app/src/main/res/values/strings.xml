@@ -13,5 +13,6 @@
     <string name="sign_in">ENTER</string>
     <string name="enter_coode">Enter code here</string>
     <string name="id_hint">C.N/AWB</string>
+    <string name="about">about</string>
 
 </resources>
