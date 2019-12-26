@@ -32,19 +32,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cytrucks"
-            android:textColor="#FFF"
-            android:textSize="50sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/enriching_trucker_lives"
-            android:textColor="#FFF"
-            android:textSize="16sp" />
+            android:contentDescription="@string/welcome"
+            app:srcCompat="@drawable/logo_cytrucks" />
 
     </LinearLayout>
 
@@ -61,20 +54,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/cytrucks"
-            android:textColor="#FFF"
-            android:textSize="50sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="@string/enriching_trucker_lives1"
-            android:textColor="#FFF"
-            android:textSize="16sp" />
+            android:contentDescription="@string/welcome"
+            app:srcCompat="@drawable/logo_cytrucks" />
 
     </LinearLayout>
 
@@ -151,24 +136,28 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
+
                 <EditText
                     android:id="@+id/edit"
+                    style="@style/Base.Widget.MaterialComponents.TextInputEditText"
                     android:layout_width="237dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10sp"
-                    android:layout_marginLeft="100dp"
                     android:layout_marginTop="100dp"
+                    android:layout_marginEnd="2dp"
+                    android:background="@drawable/rectangl_number"
                     android:hint="@string/mobile_number"
+                    android:inputType="number"
                     android:textColor="#0E1843"
                     android:textSize="20sp" />
 
-
                 <Button
                     android:id="@+id/button"
-                    android:layout_width="80dp"
+                    android:layout_width="149dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/edit"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rectangle_next"
                     android:gravity="center"
                     android:hint="@string/send"
                     android:textSize="25sp" />
