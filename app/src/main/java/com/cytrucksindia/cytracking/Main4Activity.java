@@ -6,6 +6,8 @@ import android.os.Bundle;import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.firebase.auth.FirebaseAuth;
@@ -28,9 +30,12 @@ public class Main4Activity extends AppCompatActivity {
             goToStartupActivity();
             return;
         }
-        mAuth.addAuthStateListener(firebaseAuth -> {
-            if (firebaseAuth.getCurrentUser() == null) {
-                goToStartupActivity();
+        mAuth.addAuthStateListener(new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                if (firebaseAuth.getCurrentUser() == null) {
+                    Main4Activity.this.goToStartupActivity();
+                }
             }
         });
 

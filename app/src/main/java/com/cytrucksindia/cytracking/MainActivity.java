@@ -11,12 +11,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 
 public class MainActivity extends AppCompatActivity {
     EditText edit;
     ImageView abcd, clover;
-    LinearLayout textsplash, texthome, menus;
+    LinearLayout textsplash, texthome;
+    ConstraintLayout menus;
     Animation frombottom;
 
     public MainActivity() {
@@ -34,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         clover = (ImageView) findViewById(R.id.clover);
         textsplash = (LinearLayout) findViewById(R.id.textsplash);
         texthome = (LinearLayout) findViewById(R.id.texthome);
-        menus = (LinearLayout) findViewById(R.id.menus);
+        menus = (ConstraintLayout) findViewById(R.id.menus);
 
         abcd.animate().translationY(-1700).setDuration(2500).setStartDelay(400);
         clover.animate().alpha(0).setDuration(800).setStartDelay(600);
