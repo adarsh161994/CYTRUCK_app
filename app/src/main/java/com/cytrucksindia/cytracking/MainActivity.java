@@ -19,8 +19,11 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout textsplash, texthome, menus;
     Animation frombottom;
 
+    public MainActivity() {
+    }
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected final void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -62,6 +65,21 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+
+
+    @Override
+    public String toString() {
+        return "MainActivity{" +
+                "edit=" + edit +
+                ", abcd=" + abcd +
+                ", clover=" + clover +
+                ", textsplash=" + textsplash +
+                ", texthome=" + texthome +
+                ", menus=" + menus +
+                ", frombottom=" + frombottom +
+                '}';
     }
 }
 

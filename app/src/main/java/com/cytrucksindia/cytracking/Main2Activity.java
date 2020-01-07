@@ -1,8 +1,5 @@
 package com.cytrucksindia.cytracking;
 
-
-
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -35,14 +32,17 @@ public class Main2Activity  extends AppCompatActivity {
     private String mVerificationId;
 
     //The edittext to input the code
-    private EditText editTextCode;
+    EditText editTextCode;
 
     //firebase auth object
     private FirebaseAuth mAuth;
 
+    public Main2Activity() {
+    }
+
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected final void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
@@ -123,7 +123,7 @@ public class Main2Activity  extends AppCompatActivity {
     };
 
 
-    private void verifyVerificationCode(String code) {
+    void verifyVerificationCode(String code) {
         //creating the credential
         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(mVerificationId, code);
 
@@ -165,4 +165,13 @@ public class Main2Activity  extends AppCompatActivity {
                 });
     }
 
+    @Override
+    public final String toString() {
+        return "Main2Activity{" +
+                "mVerificationId='" + mVerificationId + '\'' +
+                ", editTextCode=" + editTextCode +
+                ", mAuth=" + mAuth +
+                ", mCallbacks=" + mCallbacks +
+                '}';
+    }
 }

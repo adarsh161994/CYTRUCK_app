@@ -11,12 +11,14 @@
         android:id="@+id/clover"
         android:layout_width="226dp"
         android:layout_height="207dp"
-        android:layout_marginEnd="272dp"
         android:layout_marginStart="272dp"
+        android:layout_marginEnd="272dp"
+        android:contentDescription="@string/todo"
         android:elevation="6dp"
         android:src="@drawable/clover"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop" />
 
     <LinearLayout
         android:id="@+id/textsplash"
@@ -68,6 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="308dp"
+        android:elevation="6dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.727"
@@ -85,7 +88,8 @@
             android:inputType="number"
             android:layout_marginStart="50dp"
             android:textColor="#0E1843"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+             />
 
         <Button
             android:id="@+id/button"
@@ -112,7 +116,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/first1" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
