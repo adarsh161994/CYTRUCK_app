@@ -11,14 +11,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
 
 public class MainActivity extends AppCompatActivity {
     EditText edit;
     ImageView abcd, clover;
     LinearLayout textsplash, texthome;
-    ConstraintLayout menus;
+    LinearLayout menus;
     Animation frombottom;
 
     public MainActivity() {
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         clover = (ImageView) findViewById(R.id.clover);
         textsplash = (LinearLayout) findViewById(R.id.textsplash);
         texthome = (LinearLayout) findViewById(R.id.texthome);
-        menus = (ConstraintLayout) findViewById(R.id.menus);
+        menus = (LinearLayout) findViewById(R.id.menus);
 
         abcd.animate().translationY(-1700).setDuration(2500).setStartDelay(400);
         clover.animate().alpha(0).setDuration(800).setStartDelay(600);
@@ -46,16 +45,14 @@ public class MainActivity extends AppCompatActivity {
         menus.startAnimation(frombottom);
 
 
-
-
         edit = findViewById(R.id.edit);
-        findViewById(R.id.button).setOnClickListener(   new View.OnClickListener() {
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 String mobile = edit.getText().toString().trim();
 
-                if(mobile.isEmpty() || mobile.length() < 10){
+                if (mobile.isEmpty() || mobile.length() < 10) {
                     edit.setError("Enter a valid mobile");
                     edit.requestFocus();
                     return;
@@ -68,21 +65,4 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
-
-
-    @Override
-    public String toString() {
-        return "MainActivity{" +
-                "edit=" + edit +
-                ", abcd=" + abcd +
-                ", clover=" + clover +
-                ", textsplash=" + textsplash +
-                ", texthome=" + texthome +
-                ", menus=" + menus +
-                ", frombottom=" + frombottom +
-                '}';
-    }
 }
-
-

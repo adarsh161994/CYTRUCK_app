@@ -110,7 +110,7 @@ public class Main2Activity  extends AppCompatActivity {
 
         @Override
         public void onVerificationFailed(FirebaseException e) {
-            Toast.makeText(Main2Activity .this, e.getMessage(), Toast.LENGTH_LONG).show();
+            Toast.makeText(Main2Activity.this, e.getMessage(), Toast.LENGTH_LONG).show();
         }
 
         @Override
@@ -133,12 +133,12 @@ public class Main2Activity  extends AppCompatActivity {
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
         mAuth.signInWithCredential(credential)
-                .addOnCompleteListener( Main2Activity.this, new OnCompleteListener<AuthResult>() {
+                .addOnCompleteListener(Main2Activity.this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             //verification successful we will start the profile activity
-                            Intent intent = new Intent( Main2Activity .this, Main3Activity.class);
+                            Intent intent = new Intent(Main2Activity.this, Main3Activity.class);
                             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
 
@@ -163,15 +163,5 @@ public class Main2Activity  extends AppCompatActivity {
                         }
                     }
                 });
-    }
-
-    @Override
-    public final String toString() {
-        return "Main2Activity{" +
-                "mVerificationId='" + mVerificationId + '\'' +
-                ", editTextCode=" + editTextCode +
-                ", mAuth=" + mAuth +
-                ", mCallbacks=" + mCallbacks +
-                '}';
     }
 }

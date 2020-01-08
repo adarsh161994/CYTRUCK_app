@@ -79,6 +79,8 @@
     <inspection_tool class="CyclomaticComplexity" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="m_limit" value="10" />
     </inspection_tool>
+    <inspection_tool class="DeprecatedClassUsageInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="Deprecation" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="DesignForExtension" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="Destructure" enabled="true" level="INFO" enabled_by_default="true" />
     <inspection_tool class="DirectUseOfResultType" enabled="true" level="WEAK WARNING" enabled_by_default="true" />

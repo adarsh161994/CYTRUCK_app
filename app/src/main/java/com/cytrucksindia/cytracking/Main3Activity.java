@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Main3Activity extends AppCompatActivity {
     EditText edit1;
     Button button1;
-    private Object Main5Activity;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

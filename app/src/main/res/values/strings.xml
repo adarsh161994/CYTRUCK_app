@@ -1,31 +1,16 @@
 <resources>
     <string name="app_name">CYTRACKING</string>
-    <string name="cytrucks">CYTRUCKS</string>
-    <string name="enriching_trucker_lives">ENRICHING TRUCKER LIVES</string>
-    <string name="cytrucks1">CYTRUCKS</string>
-    <string name="enriching_trucker_lives1">ENRICHING TRUCKER LIVES</string>
     <string name="mobile_number">Mobile Number</string>
     <string name="send">SEND</string>
     <string name="wait_for_otp">PHONE NUMBER VERIFICATION</string>
-    <string name="id">ID</string>
     <string name="submit">SUBMIT</string>
     <string name="welcome">Welcome to cytrucksindia</string>
     <string name="sign_in">ENTER</string>
     <string name="enter_coode">Enter code here</string>
     <string name="id_hint">C.N/AWB</string>
-    <string name="about">about</string>
-    <string name="first">First</string>
-    <string name="second">Second</string>
-    <string name="third">Third</string>
-    <string name="fourth">Fourth</string>
     <string name="first1">TODO</string>
     <string name="todo">TODO</string>
-    <string name="disconnected">disconnected</string>
-    <string name="lat_long">lat_long</string>
-    <string name="device_id">device_id</string>
-    <string name="start">start</string>
-    <string name="track">Track</string>
-    <string name="enter_device_id">Enter device id</string>
-    <string name="status">Status:</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="click_me_to_show_ur_location">click me to show ur location</string>
 
 </resources>

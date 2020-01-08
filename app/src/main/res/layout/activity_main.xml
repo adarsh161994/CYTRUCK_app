@@ -64,8 +64,7 @@
 
     </LinearLayout>
 
-
-    <LinearLayout
+<LinearLayout
         android:id="@+id/menus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -89,7 +88,7 @@
             android:layout_marginStart="50dp"
             android:textColor="#0E1843"
             android:textSize="20sp"
-             />
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/button"
@@ -103,7 +102,7 @@
             android:textSize="25sp" />
 
 
-    </LinearLayout>
+</LinearLayout>
 
     <ImageView
         android:id="@+id/abcd"
