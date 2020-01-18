@@ -77,29 +77,29 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-        <EditText
-            android:id="@+id/edit"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:background="@drawable/rectangl_number"
-            android:hint="@string/mobile_number"
-            android:inputType="number"
-            android:layout_marginStart="50dp"
-            android:textColor="#0E1843"
-            android:textSize="20sp"
-            android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rectangle__number"
+        android:hint="@string/mobile_number"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColor="#0E1843"
+        android:textSize="20sp" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="20dp"
-            android:layout_width="149dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rectangle_next"
-            android:gravity="center"
-            android:hint="@string/send"
-            android:textSize="25sp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle_next"
+        android:gravity="center"
+        android:hint="@string/send"
+        android:textSize="25sp" />
 
 
 </LinearLayout>
