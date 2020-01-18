@@ -15,15 +15,15 @@
       },
       "oauth_client": [
         {
-          "client_id": "152552780365-94jqtfhfe6tr0hnjhh2menn6mblssbg5.apps.googleusercontent.com",
+          "client_id": "152552780365-8h4dt652rlgdq0m2bqluveqv2nmtpq83.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.cytrucksindia.cytracking",
-            "certificate_hash": "56f04bb065714f8ccc77075f64852e2a40ae79dd"
+            "certificate_hash": "b8f7002864ee4f9df791d207c3b75d1301b317b7"
           }
         },
         {
-          "client_id": "152552780365-qa60guuob9oh6cjesa3pv8sl4je9sjbm.apps.googleusercontent.com",
+          "client_id": "152552780365-hp4elhp67c5bbib5jb1sgqlep9aun1k9.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.cytrucksindia.cytracking",
@@ -31,11 +31,19 @@
           }
         },
         {
-          "client_id": "152552780365-540et14hfvjsla6lu2vg8040j74har30.apps.googleusercontent.com",
+          "client_id": "152552780365-8536cbhq0slj3956kbqoei8ovju4k147.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.cytrucksindia.cytracking",
             "certificate_hash": "e14a48e6875e4cad0a7ce2a8e612b0e83b28fcd5"
+          }
+        },
+        {
+          "client_id": "152552780365-k6qb706vdrma5timbif0rv16jqd5k239.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cytrucksindia.cytracking",
+            "certificate_hash": "56f04bb065714f8ccc77075f64852e2a40ae79dd"
           }
         }
       ],
