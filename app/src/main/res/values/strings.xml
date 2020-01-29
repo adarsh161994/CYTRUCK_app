@@ -1,16 +1,18 @@
 <resources>
     <string name="app_name">CYTRACKING</string>
-    <string name="mobile_number">Mobile Number</string>
     <string name="send">SEND</string>
     <string name="wait_for_otp">PHONE NUMBER VERIFICATION</string>
     <string name="submit">SUBMIT</string>
     <string name="welcome">Welcome to cytrucksindia</string>
     <string name="sign_in">ENTER</string>
-    <string name="enter_coode">Enter code here</string>
+    <string name="enter_coode">X    X     X     X     X     X</string>
     <string name="id_hint">C.N/AWB</string>
     <string name="first1">TODO</string>
     <string name="todo">TODO</string>
     <string name="title_activity_maps">Map</string>
     <string name="click_me_to_show_ur_location">click me to show ur location</string>
+    <string name="mobile_number">Enter Your Mobile Number</string>
+    <string name="generate_app">GENERATE OTP</string>
+<!--    <string name="todo">TODO</string>-->
 
 </resources>

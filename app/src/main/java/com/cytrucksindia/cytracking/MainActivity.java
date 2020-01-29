@@ -15,10 +15,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     EditText edit;
-    ImageView abcd, clover;
+    ImageView abcd;
+    ImageView clover;
     LinearLayout textsplash, texthome;
-    LinearLayout menus;
-    Animation frombottom;
+//    LinearLayout menus;
+    Animation frombottom, animSlide;
 
     public MainActivity() {
     }
@@ -30,19 +31,30 @@ public class MainActivity extends AppCompatActivity {
 
         frombottom = AnimationUtils.loadAnimation(this, R.anim.frombottom);
 
+        // Refer the ImageView like this
+        clover = (ImageView) findViewById(R.id.clover);
+
+// Load the animation like this
+        animSlide = AnimationUtils.loadAnimation(getApplicationContext(),
+                R.anim.slide);
+
+// Start the animation like this
+        clover.startAnimation(animSlide);
+
 
         abcd = (ImageView) findViewById(R.id.abcd);
         clover = (ImageView) findViewById(R.id.clover);
         textsplash = (LinearLayout) findViewById(R.id.textsplash);
         texthome = (LinearLayout) findViewById(R.id.texthome);
-        menus = (LinearLayout) findViewById(R.id.menus);
+//        menus = (LinearLayout) findViewById(R.id.menus);
 
-        abcd.animate().translationY(-1700).setDuration(2500).setStartDelay(400);
-        clover.animate().alpha(0).setDuration(800).setStartDelay(600);
+//        clover.animate().translationX(-500).setDuration(800).setStartDelay(400);
+        abcd.animate().translationY(-1500).setDuration(2500).setStartDelay(400);
+//       clover.animate().alpha(0).setDuration(800).setStartDelay(600);
         textsplash.animate().translationY(140).alpha(0).setDuration(800).setStartDelay(300);
 
         texthome.startAnimation(frombottom);
-        menus.startAnimation(frombottom);
+//        menus.startAnimation(frombottom);
 
 
         edit = findViewById(R.id.edit);

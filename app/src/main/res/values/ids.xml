@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="texthome" type="id" />
+    <item name="clover" type="id" />
+    <item name="abcd" type="id" />
+    <item name="textsplash" type="id" />
+    <item name="edit" type="id" />
+    <item name="button" type="id" />
+</resources>
