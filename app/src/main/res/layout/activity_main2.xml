@@ -8,66 +8,116 @@
     tools:context=".Main2Activity">
 
 
+    <!--    <com.chaos.view.PinView-->
+<!--        android:id="@+id/firstPinView"-->
+<!--        style="@style/PinWidget.PinView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:cursorVisible="true"-->
+<!--        android:hint="Hint."-->
+<!--        android:inputType="text"-->
+<!--        android:itemBackground="@mipmap/ic_launcher"-->
+<!--        android:padding="@dimen/common_padding"-->
+<!--        android:textColor="@color/text_colors"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:cursorColor="@color/line_selected"-->
+<!--        app:cursorWidth="2dp"-->
+<!--        app:hideLineWhenFilled="true"-->
+<!--        app:itemCount="5"-->
+<!--        app:itemHeight="48dp"-->
+<!--        app:itemRadius="4dp"-->
+<!--        app:itemSpacing="0dp"-->
+<!--        app:itemWidth="48dp"-->
+<!--        app:lineColor="@color/line_colors"-->
+<!--        app:lineWidth="2dp"-->
+<!--        app:viewType="rectangle"-->
+<!--        tools:layout_editor_absoluteX="128dp"-->
+<!--        tools:layout_editor_absoluteY="405dp" />-->
+
     <EditText
         android:id="@+id/editTextCode"
-        android:layout_width="360dp"
-        android:layout_height="64dp"
-        android:layout_marginTop="76dp"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/otpnew"
         android:digits="0123456789"
         android:drawingCacheQuality="auto"
         android:gravity="center"
         android:importantForAutofill="no"
         android:inputType="phone"
+        android:letterSpacing="1"
         android:maxLength="10"
         android:paddingStart="1dp"
         android:paddingEnd="50dp"
-        android:paddingBottom="32dp"
+        android:paddingBottom="7dp"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.497" />
+        app:layout_constraintVertical_bias="0.065" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/calibri_bold"
         android:text="@string/wait_for_otp"
         android:textAlignment="center"
-        android:textSize="18sp"
+        android:textColor="#424141"
+        android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextCode"
+        app:layout_constraintHorizontal_bias="0.193"
+        app:layout_constraintStart_toStartOf="@+id/editTextCode"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.174" />
 
     <Button
         android:id="@+id/buttonSignIn"
-        android:layout_width="49dp"
-        android:layout_height="42dp"
-        android:background="@drawable/arrow"
+        android:layout_width="44dp"
+        android:layout_height="41dp"
+        android:background="@drawable/box"
         android:textAllCaps="false"
         android:textColor="#cdd8f1"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/editTextCode"
         app:layout_constraintEnd_toEndOf="@+id/editTextCode"
-        app:layout_constraintHorizontal_bias="0.885"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="@+id/editTextCode"
         app:layout_constraintTop_toTopOf="@+id/editTextCode"
-        app:layout_constraintVertical_bias="0.426"
+        app:layout_constraintVertical_bias="0.384"
         tools:ignore="RtlCompat" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/no"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/layout" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="91dp"
+        android:fontFamily="@font/calibri_light"
+        android:text="@string/phone_verification"
+        android:textColor="#424141"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

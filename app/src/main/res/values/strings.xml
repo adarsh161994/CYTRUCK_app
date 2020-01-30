@@ -1,7 +1,8 @@
 <resources>
-    <string name="app_name">CYTRACKING</string>
+    <string name="app_name">CYTRUCKS</string>
     <string name="send">SEND</string>
-    <string name="wait_for_otp">PHONE NUMBER VERIFICATION</string>
+    <string name="phone_verification">Phone Verification</string>
+    <string name="wait_for_otp">Enter your OTP code below</string>
     <string name="submit">SUBMIT</string>
     <string name="welcome">Welcome to cytrucksindia</string>
     <string name="sign_in">ENTER</string>
@@ -13,6 +14,9 @@
     <string name="click_me_to_show_ur_location">click me to show ur location</string>
     <string name="mobile_number">Enter Your Mobile Number</string>
     <string name="generate_app">GENERATE OTP</string>
-<!--    <string name="todo">TODO</string>-->
+    <string name="no">no</string>
+    <string name="resend_code">Resend Code In 60 Seconds</string>
+    <string name="slogan">Drive Your Business With CYTRUCKS</string>
+    <!--    <string name="todo">TODO</string>-->
 
 </resources>
