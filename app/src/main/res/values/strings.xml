@@ -16,7 +16,8 @@
     <string name="generate_app">GENERATE OTP</string>
     <string name="no">no</string>
     <string name="resend_code">Resend Code In 60 Seconds</string>
-    <string name="slogan">Drive Your Business With CYTRUCKS</string>
+    <string name="slogan">Drive Your Business With</string>
+    <string name="cytrucks">CYTRUCKS</string>
     <!--    <string name="todo">TODO</string>-->
 
 </resources>
