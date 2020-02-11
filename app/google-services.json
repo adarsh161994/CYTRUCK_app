@@ -8,14 +8,14 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:152552780365:android:f24df3291dc7aba9306204",
+        "mobilesdk_app_id": "1:152552780365:android:210954babdd3d4b9306204",
         "android_client_info": {
           "package_name": "com.cytrucksindia.cytracking"
         }
       },
       "oauth_client": [
         {
-          "client_id": "152552780365-8h4dt652rlgdq0m2bqluveqv2nmtpq83.apps.googleusercontent.com",
+          "client_id": "152552780365-ldi4389l0sarpvcu6irtl1virp3gtb16.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.cytrucksindia.cytracking",
@@ -23,33 +23,17 @@
           }
         },
         {
-          "client_id": "152552780365-hp4elhp67c5bbib5jb1sgqlep9aun1k9.apps.googleusercontent.com",
+          "client_id": "152552780365-kunvun18vef5lvg5cik2vgb74jlj96ub.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.cytrucksindia.cytracking",
-            "certificate_hash": "6eb7d502618667ec9c03f3fc97799f7f45ba9ee4"
-          }
-        },
-        {
-          "client_id": "152552780365-8536cbhq0slj3956kbqoei8ovju4k147.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.cytrucksindia.cytracking",
-            "certificate_hash": "e14a48e6875e4cad0a7ce2a8e612b0e83b28fcd5"
-          }
-        },
-        {
-          "client_id": "152552780365-k6qb706vdrma5timbif0rv16jqd5k239.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.cytrucksindia.cytracking",
-            "certificate_hash": "56f04bb065714f8ccc77075f64852e2a40ae79dd"
+            "certificate_hash": "a60b91b3a54f1bea2f2a8edce7d2066bfe67dc74"
           }
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBNRF0OMqIvGVjVE2F7R4gpCZCr_iPu6uM"
+          "current_key": "AIzaSyC4PfisxSBtZxypOKk0wQIXavEwUzfxL9c"
         }
       ],
       "services": {
